@@ -1,0 +1,41 @@
+
+			
+			
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1000/xhtml">
+<head th:replace="common/header :: common-header" />
+
+<body>
+	<div th:replace="common/header :: navbar" > </div>
+
+	<div class="container">
+		<div class="row" style="margin-bottom: -100px;">
+			<div class="col-xs-8">
+				
+			</div>
+		  
+
+		<div class="row" style="margin-top: 60px;">
+			<div class="col-xs-9 col-xs-offset-3">
+
+				<!-- Tab panels -->
+				<div class="tab-content"> 
+				<div th:if="${createdSuccesfully}">
+				<h5 style="font-style: italic;" >Account Created Successfully, Please Login</h5>
+				
+				 <a th:href="@{/}" class="btn btn-link">Login</a>
+				
+			</div>
+					 
+						
+					</div> 
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- end of container --> 
+
+	<div th:replace="common/header :: body-bottom-scripts" > </div>
+</body>
+</html>
+			
